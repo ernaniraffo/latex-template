@@ -1,0 +1,191 @@
+% C
+\lstdefinestyle{c}{
+  language=c,
+  backgroundcolor=\color{white},
+  commentstyle=\color{Green},
+  keywordstyle=\color{blue},
+  keywordstyle=[2]\color{magenta},
+  numberstyle=\ttfamily\color{gray},
+  stringstyle=\color{BrickRed},
+  basicstyle=\ttfamily\footnotesize\color{black},
+  breakatwhitespace=false,       
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=7pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  xleftmargin=10pt,
+  showtabs=false,                  
+  tabsize=2
+}
+
+\newtcblisting{clisting}[2][]{
+  title=#2, #1,
+  fonttitle=\footnotesize\bfseries,
+  colframe=black!75,
+  colback=white!90,
+  listing only,
+  listing options={style=c},
+  top=-5pt,
+  bottom=-5pt,
+  enlarge top by=5pt
+}
+
+% C#
+\lstdefinestyle{csharp}{
+  language=csh,
+  backgroundcolor=\color{white!75},
+  commentstyle=\color{Green},
+  keywordstyle=\color{RoyalBlue!60},
+  keywordstyle=[2]\color{TealBlue},
+  morekeywords={ 
+                abstract, event, new, struct,
+                as, explicit, null, switch,
+                base, extern, object, this,
+                bool, false, operator, throw,
+                break, finally, out, true,
+                byte, fixed, override, try,
+                case, float, params, typeof,
+                catch, for, private, uint,
+                char, foreach, protected, ulong,
+                checked, goto, public, unchecked,
+                class, if, readonly, unsafe,
+                const, implicit, ref, ushort,
+                continue, in, return, using,
+                decimal, int, sbyte, virtual,
+                default, interface, sealed, volatile,
+                delegate, internal, short, void,
+                do, is, sizeof, while,
+                double, lock, stackalloc,
+                else, long, static,
+                enum, namespace, string},
+  morekeywords=[2]{
+                MonoBehaviour, SerializeField, 
+                Slider, GameObject, Text, TMP_Text,
+                NavMeshAgent},
+  numberstyle=\ttfamily\color{gray},
+  stringstyle=\color{BrickRed!60},
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  basicstyle=\ttfamily\footnotesize\color{black},
+  breakatwhitespace=false,       
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=7pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  xleftmargin=10pt,
+  showtabs=false,                  
+  tabsize=2
+}
+
+\newtcblisting{cshlisting}[2][]{
+  title=#2, #1,
+  fonttitle=\footnotesize\bfseries,
+  colframe=white!75,
+  colback=white!75,
+  listing only,
+  listing options={style=csharp},
+  top=-5pt,
+  bottom=-5pt,
+  enlarge top by=5pt
+}
+
+% Python
+\lstdefinestyle{python}{
+  language=python,
+  backgroundcolor=\color{white},
+  commentstyle=\color{Green},
+  keywordstyle=\color{blue},
+  keywordstyle=[2]\color{magenta},
+  morekeywords={as, None, True, False, self},
+  numberstyle=\ttfamily\color{gray},
+  stringstyle=\color{BrickRed},
+  basicstyle=\ttfamily\footnotesize\color{black},
+  breakatwhitespace=false,
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,
+  mathescape=true,
+  numbersep=7pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  xleftmargin=10pt,
+  showtabs=false,                  
+  tabsize=2
+}
+
+\newtcblisting{pylisting}[2][]{
+  title=#2, #1,
+  fonttitle=\footnotesize\bfseries,
+  colframe=black!75,
+  colback=white,
+  listing only,
+  listing options={style=python},
+  top=-5pt,
+  bottom=-5pt,
+  enlarge top by=5pt
+}
+
+% Bash
+\lstdefinestyle{bash}{
+    language=bash,
+    basicstyle=\ttfamily\footnotesize\color{black},
+    breakatwhitespace=false,
+    mathescape=true,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    showspaces=false,
+    showstringspaces=false,
+    xleftmargin=-7pt,
+    showtabs=false,
+    tabsize=2
+}
+
+\newtcblisting{bashlisting}[1]{
+    title=#1,
+    fonttitle=\footnotesize\bfseries,
+    colframe=black!75,
+    colback=white,
+    listing only,
+    listing options={style=bash},
+    top=-5pt,
+    bottom=-5pt,
+    enlarge top by=5pt
+}
+
+% LLVM
+\lstdefinestyle{llvm}{
+    language=LLVM,
+    basicstyle=\ttfamily\footnotesize\color{black},
+    keywordstyle=\color{blue},
+    keywordstyle=[2]\color{magenta},
+    breakatwhitespace=false,
+    mathescape=true,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    showspaces=false,
+    showstringspaces=false,
+    xleftmargin=-7pt,
+    showtabs=false,
+    tabsize=2
+}
+
+\newtcblisting{llvmlisting}[1]{
+    title=#1,
+    fonttitle=\footnotesize\bfseries,
+    colframe=black!75,
+    colback=white,
+    listing only,
+    listing options={style=llvm},
+    top=-5pt,
+    bottom=-5pt,
+    enlarge top by=5pt
+}
