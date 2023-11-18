@@ -1,2 +1,2 @@
-# LaTeX-Template
+# latex-template
 Templates for LaTeX documents/notes
